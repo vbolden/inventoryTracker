@@ -11,4 +11,8 @@ export class DigitalProduct extends Product {
     get formattedFileSize(): string {
         return `${this.fileSize} MB`
     }
+
+    displayDetails(): string {
+        return `${this.name} is $${this.price} and has a file size of ${this.formattedFileSize}`
+    }
 }
