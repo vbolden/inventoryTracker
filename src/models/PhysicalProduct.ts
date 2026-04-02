@@ -15,4 +15,8 @@ export class PhysicalProduct extends Product {
     get formattedWeight():string {
         return `${this.weight} kg`;
     }
+
+    displayDetails(): string {
+        return `${this.name} is $${this.price} with tax, and weighs ${this.formattedWeight}`;
+    }
 }
