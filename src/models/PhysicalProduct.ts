@@ -1,4 +1,4 @@
-import { Product } from "./Product.ts"
+import { Product } from "./Product"
 
 export class PhysicalProduct extends Product {
     weight: number;
