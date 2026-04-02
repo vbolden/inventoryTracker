@@ -8,11 +8,7 @@ export class DigitalProduct extends Product {
         this.fileSize = fileSize;
     }
 
-    // override getPriceWithTax(): number {
-    //     return this.price;
-    // }
-
     get formattedFileSize(): string {
-        return this.fileSize = `${this.fileSize} MB`
+        return `${this.fileSize} MB`
     }
 }

@@ -8,11 +8,11 @@ export class PhysicalProduct extends Product {
         this.weight = weight;
     }
 
-    override getPriceWithTax(): number {
-        return this.price * (0.10 + 1);
+    getPriceWithTax(): number {
+        return this.price * (0.1 + 1)
     }
 
     get formattedWeight():string {
-        return this.weight = `${this.weight} kg`;
+        return `${this.weight} kg`;
     }
 }
