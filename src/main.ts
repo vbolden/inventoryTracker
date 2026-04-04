@@ -2,9 +2,24 @@ import { PhysicalProduct } from "./models/PhysicalProduct";
 import { DigitalProduct } from "./models/DigitalProduct";
 
 // CREATE AN INSTANCE OF PHYSICAL AND DIGITAL PRODUCT
-const physicalProduct = new PhysicalProduct("Laptop", "L5984", 1300, 1.6);
+// CREATE AN ARRAY TO HOLD MULTIPLE PRODUCTS
+const products = [
+    new PhysicalProduct("L5984", "Laptop", 1300, 1.6),
+    new PhysicalProduct("T8397", "Headphones", 80, 0.55),
+    new DigitalProduct("E4583", "E-Book", 36.99, 3),
+    new DigitalProduct("H4830", "Software", 100, 6),
+]
 
-const digitalProduct = new DigitalProduct("E-Book", "E4583", 36.99, 3);
+// LOOP TO DISPLAY PRODUCT DETAILS
+// for(let i = 0; i < products.length; i++) {
+//     console.log(products[i]?.displayDetails())
+// };
 
-console.log(physicalProduct);
-console.log(digitalProduct);
+for (const product of products) {
+    // DISPLAY DETAILS
+    console.log(product.displayDetails());
+
+    // CALCULATE AND DISPLAY PRICE WITH TAX
+    const finalPrice = product.getPriceWithTax();
+    console.log(`Final price with tax (if applicable): $${finalPrice.toFixed(2)}`);
+}
