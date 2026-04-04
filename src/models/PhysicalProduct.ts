@@ -17,6 +17,6 @@ export class PhysicalProduct extends Product {
     }
 
     displayDetails(): string {
-        return `${this.name} is $${this.price} with tax, and weighs ${this.formattedWeight}`;
+        return `${this.name} | ${this.sku} is $${this.price} with tax, and weighs ${this.formattedWeight}`;
     }
 }

@@ -13,6 +13,6 @@ export class DigitalProduct extends Product {
     }
 
     displayDetails(): string {
-        return `${this.name} is $${this.price} and has a file size of ${this.formattedFileSize}`
+        return `${this.name} | ${this.sku} is $${this.price} and has a file size of ${this.formattedFileSize}`
     }
 }
