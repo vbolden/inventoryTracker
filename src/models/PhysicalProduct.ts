@@ -18,7 +18,6 @@ export class PhysicalProduct extends Product {
     }
 
     displayDetails(): string {
-        const finalPrice = this.getPriceWithTax();
-        return `${this.name} | ${this.sku} is $${finalPrice.toFixed(2)} with tax, and weighs ${this.formattedWeight}`;
+        return `${this.name} | ${this.sku} is $${this.price} and weighs ${this.formattedWeight}`;
     }
 }

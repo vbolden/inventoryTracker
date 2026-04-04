@@ -13,6 +13,10 @@ export class DigitalProduct extends Product {
         return `${this.fileSize} MB`
     }
 
+    getPriceWithTax(): number {
+        return this.price;
+    }
+
     displayDetails(): string {
         return `${this.name} | ${this.sku} is $${this.price} and has a file size of ${this.formattedFileSize}`
     }
