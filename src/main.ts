@@ -1,5 +1,6 @@
 import { PhysicalProduct } from "./models/PhysicalProduct";
 import { DigitalProduct } from "./models/DigitalProduct";
+import { calculateTax } from "./utils/taxCalculator";
 
 // CREATE AN INSTANCE OF PHYSICAL AND DIGITAL PRODUCT
 // CREATE AN ARRAY TO HOLD MULTIPLE PRODUCTS
@@ -20,6 +21,6 @@ for (const product of products) {
     console.log(product.displayDetails());
 
     // CALCULATE AND DISPLAY PRICE WITH TAX
-    const finalPrice = product.getPriceWithTax();
+    const finalPrice = calculateTax(product);
     console.log(`Final price with tax (if applicable): $${finalPrice.toFixed(2)}`);
 }
