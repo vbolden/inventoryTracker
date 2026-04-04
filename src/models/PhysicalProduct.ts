@@ -8,6 +8,7 @@ export class PhysicalProduct extends Product {
         this.weight = weight;
     }
 
+    // OVERRIDE GETPRICEWITHTAX FUNCTION TO ADD 10% TAX
     getPriceWithTax(): number {
         return this.price * (0.1 + 1)
     }

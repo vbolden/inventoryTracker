@@ -1,5 +1,6 @@
 import {Product} from "./Product"
 
+// CREATE DIGITAL PRODUCT CLASS, EXTENDS PRODUCT CLASS
 export class DigitalProduct extends Product {
     fileSize: number;
 
