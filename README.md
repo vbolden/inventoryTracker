@@ -1,0 +1,7 @@
+## OUTLINE
+
+
+# RESOURCES 
+
+
+### CRITICAL THINKING 
